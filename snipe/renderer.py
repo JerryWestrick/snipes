@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import pygame
-from camera import Camera
-from entities import Player, Snipe, Hive, Bullet
-from maze import Maze
-from settings import (
+from snipe.camera import Camera
+from snipe.entities import Player, Snipe, Hive, Bullet
+from snipe.maze import Maze
+from snipe.settings import (
     SCREEN_WIDTH, SCREEN_HEIGHT,
     COLOR_BG, COLOR_WALL, COLOR_PLAYER, COLOR_PLAYER_INV,
     COLOR_SNIPE, COLOR_HIVE, COLOR_BULLET_PLAYER, COLOR_BULLET_SNIPE,

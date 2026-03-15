@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import random
 import math
-from entities import Snipe, Bullet
-from settings import DIRECTIONS, SNIPE_SHOOT_CHANCE
-from physics import move_circle
+from snipe.entities import Snipe, Bullet
+from snipe.settings import DIRECTIONS, SNIPE_SHOOT_CHANCE
+from snipe.physics import move_circle
 
 
 _DIR_NAMES = list(DIRECTIONS.keys())

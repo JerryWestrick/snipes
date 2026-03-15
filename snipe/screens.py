@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import pygame
-from settings import SCREEN_WIDTH, SCREEN_HEIGHT, COLOR_BG, COLOR_HUD_TEXT, LEVELS
+from snipe.settings import SCREEN_WIDTH, SCREEN_HEIGHT, COLOR_BG, COLOR_HUD_TEXT, LEVELS
 
 
 def draw_title_screen(screen: pygame.Surface) -> None:

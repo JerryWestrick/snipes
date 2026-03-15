@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from settings import SCREEN_WIDTH, SCREEN_HEIGHT
+from snipe.settings import SCREEN_WIDTH, SCREEN_HEIGHT
 
 
 class Camera:

@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import pygame
-from settings import DIRECTIONS, RICOCHET
-from entities import Bullet
+from snipe.settings import DIRECTIONS, RICOCHET
+from snipe.entities import Bullet
 
 
 def move_circle(x: float, y: float, dx: float, dy: float, radius: float,

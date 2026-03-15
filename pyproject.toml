@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snipes-game"
+version = "0.2.0"
+description = "A recreation of the classic 1983 Novell NetWare game Snipes"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "Jerry Westrick"},
+]
+keywords = ["game", "pygame", "retro", "arcade", "snipes", "novell"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Arcade",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pygame-ce>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/JerryWestrick/snipes"
+Repository = "https://github.com/JerryWestrick/snipes"
+Issues = "https://github.com/JerryWestrick/snipes/issues"
+
+[project.scripts]
+snipe = "snipe.main:main"
+
+[tool.setuptools.packages.find]
+include = ["snipe*"]

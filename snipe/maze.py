@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import random
 import pygame
-from settings import CORRIDOR_WIDTH, WALL_THICKNESS, ROOM_SIZE
+from snipe.settings import CORRIDOR_WIDTH, WALL_THICKNESS, ROOM_SIZE
 
 
 class Maze:

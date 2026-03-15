@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from settings import (
+from snipe.settings import (
     PLAYER_RADIUS, PLAYER_SPEED, PLAYER_START_LIVES,
     SNIPE_RADIUS, SNIPE_SPEED, SNIPE_MOVE_INTERVAL,
     HIVE_RADIUS,

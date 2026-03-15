@@ -6,20 +6,20 @@ import random
 import pygame
 from pygame.locals import *
 
-from settings import (
+from snipe.settings import (
     SCREEN_WIDTH, SCREEN_HEIGHT, FPS,
     MOVE_KEYS, SHOOT_KEYS, DIRECTIONS,
     PLAYER_SPEED, SHOOT_COOLDOWN, INVULNERABLE_TIME,
     SCORE_SNIPE, SCORE_HIVE, LEVELS,
     HIVE_RADIUS, PLAYER_START_LIVES,
 )
-from maze import Maze
-from entities import Player, Snipe, Hive, Bullet
-from physics import move_circle, move_bullet, check_circle_collision
-from ai import update_snipe
-from camera import Camera
-from renderer import Renderer
-from screens import draw_title_screen, draw_game_over_screen, draw_level_screen
+from snipe.maze import Maze
+from snipe.entities import Player, Snipe, Hive, Bullet
+from snipe.physics import move_circle, move_bullet, check_circle_collision
+from snipe.ai import update_snipe
+from snipe.camera import Camera
+from snipe.renderer import Renderer
+from snipe.screens import draw_title_screen, draw_game_over_screen, draw_level_screen
 
 
 class Game:
@@ -366,6 +366,10 @@ def _kill_player(player: Player, maze: Maze) -> None:
         player.alive = False
 
 
-if __name__ == "__main__":
+def main():
     game = Game()
     game.run()
+
+
+if __name__ == "__main__":
+    main()
